@@ -1,0 +1,45 @@
+public class Main {
+
+    public static void main(String[] args) {
+        Division division = new Division();
+        division.sumOfDigits(12);
+        System.out.println("Is it divisible = " + division.is_divisible());
+        System.out.println("Division result = " + division.divide());
+
+    }
+}
+
+class Division {
+    int sum;
+    int number;
+
+    public void sumOfDigits(int number) {
+        this.number = number;
+
+        System.out.print("Digits of " + number + " = ");
+
+        while(number > 0) {
+            System.out.print(number % 10 + " ");
+            sum += number % 10;
+            number = number / 10;
+        }
+
+        System.out.println();
+        System.out.println("Sum of digits = " + sum);
+    }
+
+    public double divide() {
+        Double dnum = Double.valueOf(number);
+        Double dsum = Double.valueOf(sum);
+        return dnum / dsum;
+    }
+
+    public boolean is_divisible() {
+        if(number % sum == 0) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+}
