@@ -43,3 +43,16 @@ class Division {
         }
     }
 }
+
+
+
+Digits of 12 = 2 1 
+Sum of digits = 3
+Is it divisible = true
+Division result = 4.0
+
+
+Digits of 145 = 5 4 1 
+Sum of digits = 10
+Is it divisible = false
+Division result = 14.5
